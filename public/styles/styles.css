@@ -1,0 +1,306 @@
+.heading {
+  color: #9c4c7c;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+}
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+* {
+  font-family: "Roboto", sans-serif;
+}
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+body {
+  background: #efe0e0;
+  background-image: url("/images/background.jpg");
+  background-size: cover;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .logo img {
+  width: 66px;
+}
+header .logo h1 {
+  font-size: 32px;
+  font-family: "Dancing Script", sans-serif;
+  color: #9c4c7c;
+  margin-left: 15px;
+  transform: translateY(-8px);
+}
+header .logo .burger {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  font-size: 24px;
+  color: #9c4c7c;
+  display: none;
+}
+header .logo .burger:hover {
+  color: #b56695;
+}
+@media screen and (max-width: 900px) {
+  header .logo .burger {
+    display: block;
+  }
+}
+header nav {
+  display: flex;
+  align-items: center;
+  transform: translateY(-4px);
+}
+header nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  margin: 0 15px;
+  color: #9c4c7c;
+  transition: color 0.4s;
+}
+header nav a:hover {
+  color: #c589ad;
+}
+header nav a.cta {
+  color: white;
+  background-color: #9c4c7c;
+  padding: 13px 25px;
+  border-radius: 20.5px;
+  transition: background-color 0.4s;
+}
+header nav a.cta:hover {
+  background-color: #b56695;
+}
+@media screen and (max-width: 900px) {
+  header {
+    flex-direction: column;
+  }
+  header nav {
+    display: none;
+    position: fixed;
+    width: 95%;
+    top: 94px;
+    left: 2.5%;
+    padding: 20px 0;
+    background-color: #9c4c7c;
+    flex-direction: column;
+    border-radius: 20.5px;
+  }
+  header nav a {
+    color: #e7cddd;
+    display: block;
+    padding: 15px;
+  }
+  header nav a:hover {
+    color: white;
+  }
+  header nav a.cta {
+    background-color: #e7cddd;
+    color: #9c4c7c;
+    margin: 10px;
+  }
+  header nav a.cta:hover {
+    background-color: white;
+  }
+  header nav.active {
+    display: block;
+  }
+}
+main {
+  width: 95%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+main h2 {
+  color: #9c4c7c;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+}
+main h3 {
+  color: #9c4c7c;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  font-size: 30px;
+}
+main h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 5px 0;
+}
+main .services .service-category {
+  height: 400px;
+}
+main .services .service-card {
+  height: 200px;
+  display: inline-block;
+  margin-right: 20px;
+}
+main .services .service-card .service-card__inner {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  border-radius: 20.5px;
+  box-shadow: 0 -7px 30px rgba(0, 0, 0, 0.2);
+}
+main .services .service-card .service-card__inner .service-card__content {
+  background-color: #9c4c7c;
+  color: white;
+  padding: 25px;
+  border-radius: 20.5px;
+  transform: translateY(159.5px);
+  box-shadow: 0 -5px 7px rgba(0, 0, 0, 0.5);
+}
+main .services .service-card .service-card__inner .service-card__content .description {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 200px;
+}
+main .services .service-card .service-card__inner .service-card__content-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+main .services .service-card .service-card__inner .service-card__content-footer .price {
+  font-weight: bold;
+}
+main .services .service-card .service-card__inner .service-card__content-footer .cta {
+  border-radius: 20.5px;
+  background-color: #8b446e;
+  padding: 7px;
+  transition: 0.4s;
+}
+main .services .service-card .service-card__inner .service-card__content-footer .cta:hover {
+  background-color: #7a3b61;
+}
+.dropbtn {
+  color:#7a3b61;
+  background-color: none;
+  /*color: white;*/
+  padding: none;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {}
+
+main > div {
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #dadada;
+  padding: 20px 60px;
+}
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  padding: 100px 60px;
+}
+
+.hero * {
+  color: white;
+}
+
+.bg-primary, .btn-primary {
+  background-color: #a5598f !important;
+}
+
+.btn-primary {
+  border: 1px solid #914f7e !important;
+}
+
+.btn-primary:active {
+  box-shadow: 0 0 0 0.2rem rgba(145, 79, 126,0.5) !important;
+}
+
+.text-primary, .btn-link {
+  color: #a5598f !important; 
+}
+
+.service-card__content img {
+  width: 300px;
+}
+
+.services {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 950px;
+}
+.services .service {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+  padding: 0;
+  width: 250px;
+  margin-right: 50px;
+}
+.services .service .service-image {
+  border-radius: 5px;
+}
+.services .service .service-image img {
+  border-radius: 5px 5px 0 0;
+  object-fit: cover;
+  height: 300px;
+  width: 250px;
+}
+.services .service .service-content {
+  padding: 20px;
+}
+.services .service .service-content .price {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.unconfirmed-sessions {
+  margin-top: 60px;
+}

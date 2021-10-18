@@ -1,0 +1,21 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+@font-face {
+    font-family: "Broadway Script";
+    src: url("/fonts/Broadway-Script.ttf");
+}
+
+.navbar-brand {
+    font-family: "Broadway Script", sans-serif !important;
+}
+
+.field-group {
+    margin-top: 1em;
+}
